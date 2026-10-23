@@ -117,10 +117,11 @@ export const WEDDING_DATA = {
       owner: "groom",
       title: "Mừng Cưới Chú Rể",
       name: "CHU MANH CONG",
-      bankName: "Techcombank",
-      bankCode: "TCB",
-      accountNumber: "19036888888888",
-      branch: "Bắc Ninh"
+      bankName: "MSB (Ngân Hàng Hàng Hải)",
+      bankCode: "MSB",
+      accountNumber: "1807091999",
+      branch: "Bắc Ninh",
+      qrUrl: "/images/qr-groom-card.png"
     },
     {
       owner: "bride",
