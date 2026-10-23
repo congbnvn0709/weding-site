@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #CDD9CE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A9BEAA;
+}
+
+/* Botanical subtle pattern or gradients */
+.bg-paper-texture {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(#69836B 0.6px, transparent 0.6px);
+  background-size: 24px 24px;
+  background-opacity: 0.15;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A37549 0%, #D6BD9B 50%, #B88E5C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
