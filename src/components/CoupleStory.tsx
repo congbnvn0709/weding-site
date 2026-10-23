@@ -25,7 +25,7 @@ export const CoupleStory: React.FC = () => {
               <img
                 src={WEDDING_DATA.groom.avatar}
                 alt={WEDDING_DATA.groom.fullName}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute top-3 left-3 px-3 py-1 bg-sage-700/80 backdrop-blur-md rounded-full text-[11px] text-white uppercase tracking-widest font-medium">
                 Chú Rể
@@ -63,7 +63,7 @@ export const CoupleStory: React.FC = () => {
               <img
                 src={WEDDING_DATA.bride.avatar}
                 alt={WEDDING_DATA.bride.fullName}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute top-3 left-3 px-3 py-1 bg-champagne-600/90 backdrop-blur-md rounded-full text-[11px] text-white uppercase tracking-widest font-medium">
                 Cô Dâu

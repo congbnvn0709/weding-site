@@ -47,9 +47,9 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* Names & Editorial Artwork */}
-      <div className="my-auto py-10 z-10 max-w-xl mx-auto space-y-6">
+      <div className="my-auto py-6 z-10 max-w-xl mx-auto space-y-6">
         <div className="space-y-2">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif text-charcoal-800 font-normal tracking-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif text-charcoal-800 font-normal tracking-tight">
             {WEDDING_DATA.groom.fullName}
           </h1>
           <div className="flex items-center justify-center gap-4 py-1">
@@ -57,18 +57,35 @@ export const HeroSection: React.FC = () => {
             <span className="font-script text-3xl sm:text-4xl text-champagne-600">&</span>
             <div className="w-16 h-[1px] bg-champagne-300"></div>
           </div>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif text-charcoal-800 font-normal tracking-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif text-charcoal-800 font-normal tracking-tight">
             {WEDDING_DATA.bride.fullName}
           </h1>
         </div>
 
-        <p className="text-sm sm:text-base text-sage-800/80 italic font-serif max-w-md mx-auto leading-relaxed px-4">
+        {/* Real Couple Portrait in Fine-Art Arch Frame */}
+        <div className="relative max-w-xs sm:max-w-sm mx-auto my-6">
+          <div className="relative aspect-[3/4] rounded-t-[140px] rounded-b-2xl overflow-hidden border-4 border-white shadow-xl bg-sage-50">
+            <img
+              src={WEDDING_DATA.coverImage}
+              alt="Chu Mạnh Công & Ngô Thị Kim Loan"
+              className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/40 via-transparent to-transparent"></div>
+          </div>
+
+          {/* Floating Monogram Badge */}
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-white border border-champagne-300 shadow-md flex items-center justify-center text-champagne-700 font-serif text-xs font-semibold tracking-wider">
+            {WEDDING_DATA.monogram}
+          </div>
+        </div>
+
+        <p className="text-sm sm:text-base text-sage-800/80 italic font-serif max-w-md mx-auto leading-relaxed px-4 pt-2">
           "{WEDDING_DATA.invitationQuote}"
         </p>
 
         {/* Big Date Display */}
-        <div className="pt-4">
-          <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-xl bg-white/70 backdrop-blur-sm border border-champagne-200 shadow-sm text-charcoal-800">
+        <div className="pt-2">
+          <div className="inline-flex items-center gap-3 px-6 py-2 rounded-xl bg-white/80 backdrop-blur-sm border border-champagne-200 shadow-sm text-charcoal-800">
             <Calendar className="w-4 h-4 text-champagne-600" />
             <span className="font-serif text-base sm:text-lg font-medium tracking-wide">
               15 . 11 . 2026
@@ -77,7 +94,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Countdown Timer */}
-        <div className="pt-6">
+        <div className="pt-4">
           <p className="text-xs uppercase tracking-widest text-sage-600 mb-3 font-medium">
             Thời Gian Đếm Ngược
           </p>

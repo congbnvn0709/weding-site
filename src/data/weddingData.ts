@@ -24,27 +24,29 @@ export interface BankAccount {
 
 export const WEDDING_DATA = {
   groom: {
-    fullName: "Nguyễn Mạnh Công",
+    fullName: "Chu Mạnh Công",
     shortName: "Mạnh Công",
     role: "Chú rể",
-    father: "Nguyễn Văn Hùng",
+    father: "Chu Văn Hùng",
     mother: "Trần Thị Lan",
     address: "Hà Nội, Việt Nam",
     phone: "0987654321",
-    bio: "Một lập trình viên luôn kiên nhẫn và chân thành, tìm thấy nửa kia hoàn hảo của cuộc đời.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+    bio: "Một người đàn ông kiên định và chân thành, tìm thấy tình yêu trọn vẹn của cuộc đời.",
+    avatar: "/images/couple-standing.jpg"
   },
   bride: {
-    fullName: "Trần Kim Loan",
+    fullName: "Ngô Thị Kim Loan",
     shortName: "Kim Loan",
     role: "Cô dâu",
-    father: "Trần Quang Minh",
+    father: "Ngô Quang Minh",
     mother: "Lê Thị Thu",
     address: "Hà Nội, Việt Nam",
     phone: "0912345678",
-    bio: "Cô gái dịu dàng, nụ cười tỏa nắng mang lại bình yên và niềm vui cho từng khoảnh khắc.",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+    bio: "Cô gái dịu dàng, nụ cười rạng rỡ mang lại bình yên và niềm hạnh phúc cho từng khoảnh khắc.",
+    avatar: "/images/couple-spotlight.png"
   },
+  coverImage: "/images/couple-standing.jpg",
+  spotlightImage: "/images/couple-spotlight.png",
   date: "2026-11-15T11:00:00",
   invitationQuote: "Hạnh phúc không phải là một điểm đến, mà là một hành trình ta chọn cùng bước đi bên nhau.",
   monogram: "C & L",
@@ -79,28 +81,28 @@ export const WEDDING_DATA = {
   gallery: [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85",
-      caption: "Khoảnh khắc bình yên bên nhau"
+      url: "/images/couple-standing.jpg",
+      caption: "Khoảnh khắc hẹn ước trọn đời - Chu Mạnh Công & Ngô Thị Kim Loan"
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85",
-      caption: "Nụ cười rạng rỡ ngày hẹn ước"
+      url: "/images/couple-spotlight.png",
+      caption: "Ánh mắt trao trọn niềm tin và tình yêu thương"
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=85",
-      caption: "Ánh mắt trao trọn niềm tin"
+      url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85",
+      caption: "Bình yên là khi có nhau trong từng khoảnh khắc"
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=85",
-      caption: "Hành trình yêu thương"
+      url: "https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=85",
+      caption: "Tình yêu bắt đầu từ những điều giản dị nhất"
     },
     {
       id: 5,
-      url: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85",
-      caption: "Bên em là mùa xuân"
+      url: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=85",
+      caption: "Hành trình yêu thương bước sang trang mới"
     },
     {
       id: 6,
@@ -113,7 +115,7 @@ export const WEDDING_DATA = {
     {
       owner: "groom",
       title: "Mừng Cưới Chú Rể",
-      name: "NGUYEN MANH CONG",
+      name: "CHU MANH CONG",
       bankName: "Techcombank",
       bankCode: "TCB",
       accountNumber: "19036888888888",
@@ -122,7 +124,7 @@ export const WEDDING_DATA = {
     {
       owner: "bride",
       title: "Mừng Cưới Cô Dâu",
-      name: "TRAN KIM LOAN",
+      name: "NGO THI KIM LOAN",
       bankName: "Vietcombank",
       bankCode: "VCB",
       accountNumber: "9988776655",
