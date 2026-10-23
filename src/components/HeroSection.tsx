@@ -9,24 +9,37 @@ export const HeroSection: React.FC = () => {
     minutes: 0,
     seconds: 0
   });
+  const [isPast, setIsPast] = useState(false);
 
   useEffect(() => {
     const targetDate = new Date(WEDDING_DATA.date).getTime();
 
-    const interval = setInterval(() => {
+    const updateTimer = () => {
       const now = new Date().getTime();
       const distance = targetDate - now;
 
       if (distance > 0) {
+        setIsPast(false);
         setTimeLeft({
           days: Math.floor(distance / (1000 * 60 * 60 * 24)),
           hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
           minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((distance % (1000 * 60)) / 1000),
         });
+      } else {
+        setIsPast(true);
+        const past = Math.abs(distance);
+        setTimeLeft({
+          days: Math.floor(past / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((past % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((past % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((past % (1000 * 60)) / 1000),
+        });
       }
-    }, 1000);
+    };
 
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
     return () => clearInterval(interval);
   }, []);
 
@@ -88,15 +101,15 @@ export const HeroSection: React.FC = () => {
           <div className="inline-flex items-center gap-3 px-6 py-2 rounded-xl bg-white/80 backdrop-blur-sm border border-champagne-200 shadow-sm text-charcoal-800">
             <Calendar className="w-4 h-4 text-champagne-600" />
             <span className="font-serif text-base sm:text-lg font-medium tracking-wide">
-              15 . 11 . 2026
+              {WEDDING_DATA.dateDisplay}
             </span>
           </div>
         </div>
 
-        {/* Countdown Timer */}
+        {/* Countdown / Anniversary Timer */}
         <div className="pt-4">
           <p className="text-xs uppercase tracking-widest text-sage-600 mb-3 font-medium">
-            Thời Gian Đếm Ngược
+            {isPast ? 'Hành Trình Hạnh Phúc Bên Nhau' : 'Thời Gian Đếm Ngược'}
           </p>
           <div className="grid grid-cols-4 gap-2 sm:gap-4 max-w-sm mx-auto">
             {[

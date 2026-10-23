@@ -41,7 +41,7 @@ export const WaxSealIntro: React.FC<WaxSealIntroProps> = ({ onOpen }) => {
 
       {/* Decorative floral corners */}
       <div className="absolute top-6 left-6 text-sage-300 font-serif text-sm tracking-widest hidden sm:block">
-        EST. 2026
+        EST. 2024
       </div>
       <div className="absolute top-6 right-6 text-sage-300 font-serif text-sm tracking-widest hidden sm:block">
         WEDDING INVITATION

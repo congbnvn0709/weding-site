@@ -47,7 +47,7 @@ export const RsvpSection: React.FC = () => {
           </h2>
           <div className="w-16 h-[1px] bg-champagne-300 mx-auto mt-3"></div>
           <p className="text-xs text-sage-600 max-w-md mx-auto pt-2">
-            Để gia đình chuẩn bị chu đáo nhất, xin vui lòng phản hồi trước ngày 05/11/2026.
+            Để gia đình chuẩn bị chu đáo nhất, xin quý khách vui lòng gửi phản hồi sớm nhất có thể.
           </p>
         </div>
 

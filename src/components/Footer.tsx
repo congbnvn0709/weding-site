@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
             <span>Mạnh Công</span>
             <Heart className="w-3 h-3 text-champagne-400 fill-champagne-400" />
             <span>Kim Loan</span>
-            <span>• 2026</span>
+            <span>• 18.05.2024</span>
           </p>
         </div>
       </div>
