@@ -66,11 +66,11 @@ export const GiftBox: React.FC = () => {
         {/* Bank Card with QR */}
         <div className="bg-white rounded-2xl p-6 sm:p-8 border border-sage-200 shadow-sm max-w-sm mx-auto space-y-6 animate-fade-in">
           {/* VietQR Image */}
-          <div className="relative max-w-[260px] mx-auto bg-gray-50 rounded-xl overflow-hidden p-2 border border-dashed border-sage-300 flex items-center justify-center">
+          <div className="relative w-full max-w-[280px] mx-auto rounded-2xl overflow-hidden shadow-md">
             <img
               src={currentAccount.qrUrl || getVietQrUrl(currentAccount)}
               alt={`VietQR ${currentAccount.name}`}
-              className="w-full max-h-[300px] object-contain rounded-lg"
+              className="w-full h-auto object-contain rounded-2xl"
               loading="lazy"
             />
           </div>
